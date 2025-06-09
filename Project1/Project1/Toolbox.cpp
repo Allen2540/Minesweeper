@@ -10,7 +10,7 @@ int Toolbox::getProbeTries() const { return probeTries; }
 
 void Toolbox::locateMine() {
     if (mineTries <= 0) {
-        cout << "⚠️ 定位地雷道具已用完。\n";
+        cout << " 定位地雷道具已用完。\n";
         return;
     }
     mineTries--;
@@ -33,7 +33,7 @@ void Toolbox::locateMine() {
 }
 void Toolbox::checkFlagErrors() {
     if (checkTries <= 0) {
-        std::cout << "⚠️ 錯誤旗子檢查道具已用完。\n";
+        std::cout << " 錯誤旗子檢查道具已用完。\n";
         return;
     }
     checkTries--;
@@ -61,12 +61,12 @@ void Toolbox::checkFlagErrors() {
         cout << "太棒了！你目前所有的旗子都插對了。\n";
     }
     else {
-        cout << "⚠️ 警告：你目前有 " << wrongFlags << " 個旗子插錯了！\n";
+        cout << "警告：你目前有 " << wrongFlags << " 個旗子插錯了！\n";
     }
 }
 void Toolbox::revealSafeCell() {
     if (safeTries <= 0) {
-        std::cout << "⚠️ 安全格道具已用完。\n";
+        std::cout << " 安全格道具已用完。\n";
         return;
     }
     safeTries--;
@@ -85,7 +85,7 @@ void Toolbox::revealSafeCell() {
     }
 
     if (safeCells.empty()) {
-        cout << "⚠️ 沒有可揭示的安全格子了。\n";
+        cout << " 沒有可揭示的安全格子了。\n";
         return;
     }
 
@@ -95,24 +95,24 @@ void Toolbox::revealSafeCell() {
     int c = safeCells[idx].second;
 
     boardRef.reveal(r, c);
-    cout << "✅ 幫你揭示了 (" << r << ", " << c << ")，這是一個安全格！\n";
+    cout << "幫你揭示了 (" << r << ", " << c << ")，這是一個安全格！\n";
 }
 void Toolbox::probeCell(int r, int c) {
     if (probeTries <= 0) {
-        std::cout << "⚠️ 探測道具已用完。\n";
+        std::cout << "探測道具已用完。\n";
         return;
     }
     probeTries--;
     if (!boardRef.inBounds(r, c)) {
-        cout << "⚠️ 位置 (" << r << ", " << c << ") 超出邊界。\n";
+        cout << " 位置 (" << r << ", " << c << ") 超出邊界。\n";
         return;
     }
 
     const Cell& cell = boardRef.getCell(r, c);
     if (cell.isMine) {
-       cout << "💣 這一格 (" << r << ", " << c << ") 是地雷！\n";
+       cout << "這一格 (" << r << ", " << c << ") 是地雷！\n";
     }
     else {
-        cout << "✅ 這一格 (" << r << ", " << c << ") 是安全的。\n";
+        cout << "這一格 (" << r << ", " << c << ") 是安全的。\n";
     }
 }

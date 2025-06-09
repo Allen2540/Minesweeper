@@ -111,10 +111,10 @@ void GameManager::startGame(int level) {
     PlayerManager playerManager;
     playerManager.loadLeaderboard();
 
-    Toolbox t(board,level, level, level+2, level);
+    Toolbox t(board,level, level, level, level + 2);
     while (true) {
         board.display();
-        std::cout << "錯誤偵測儀(l): " << t.getMineTries() << std::endl<<"雷源定位器(c): "<<t.getCheckTries()<<std::endl<<"安全指引器(s): "<<t.getSafeTries()<<std::endl<<"地雷感測器(p): "<<t.getProbeTries()<<std::endl;
+        std::cout << "雷源定位器(l): " << t.getMineTries() << std::endl<<"錯誤偵測儀(c): "<<t.getCheckTries()<<std::endl<<"安全指引器(s): "<<t.getSafeTries()<<std::endl<<"地雷感測器(p): "<<t.getProbeTries()<<std::endl;
         std::cout << "指令 r=揭示(行 列)，f=插旗(行 列)，p=地雷感測器(行 列)，l=錯誤偵測儀，c=雷源定位器，s=安全指引器，或輸入return 返回主選單：";
         std::getline(std::cin, input);
         if (input == "return") {

@@ -7,28 +7,24 @@
       "RelativeMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|solutionrelative:Project1\\GameManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Toolbox.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Toolbox.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\PlayerManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|solutionrelative:Project1\\PlayerManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Player.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Player.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Toolbox.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Toolbox.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\GameManager.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|solutionrelative:Project1\\GameManager.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Toolbox.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Toolbox.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Cell.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Cell.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Board.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Board.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\PlayerManager.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|solutionrelative:Project1\\PlayerManager.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Cell.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -39,24 +35,28 @@
       "RelativeMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Player.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Player.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|solutionrelative:Project1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\PlayerManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|solutionrelative:Project1\\PlayerManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Board.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Board.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\GameManager.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|solutionrelative:Project1\\GameManager.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\PlayerManager.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|solutionrelative:Project1\\PlayerManager.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Utils.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Utils.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|solutionrelative:Project1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97928B52-22F7-48C9-A5D1-053982BE1024}|Project1\\Project1.vcxproj|C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Utils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -70,8 +70,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Toolbox.hpp",
+              "DocumentMoniker": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Toolbox.hpp",
+              "RelativeDocumentMoniker": "Project1\\Toolbox.hpp",
+              "ToolTip": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Toolbox.hpp",
+              "RelativeToolTip": "Project1\\Toolbox.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-08T17:13:05.52Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -80,7 +93,7 @@
               "RelativeDocumentMoniker": "Project1\\GameManager.cpp",
               "ToolTip": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\GameManager.cpp",
               "RelativeToolTip": "Project1\\GameManager.cpp",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAHcAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAHQAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-08T17:09:51.698Z",
               "EditorCaption": ""
@@ -88,158 +101,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Toolbox.hpp",
-              "DocumentMoniker": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Toolbox.hpp",
-              "RelativeDocumentMoniker": "Project1\\Toolbox.hpp",
-              "ToolTip": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Toolbox.hpp",
-              "RelativeToolTip": "Project1\\Toolbox.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-08T17:13:05.52Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Toolbox.cpp",
-              "DocumentMoniker": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Toolbox.cpp",
-              "RelativeDocumentMoniker": "Project1\\Toolbox.cpp",
-              "ToolTip": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Toolbox.cpp",
-              "RelativeToolTip": "Project1\\Toolbox.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-08T17:13:11.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Board.hpp",
-              "DocumentMoniker": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Board.hpp",
-              "RelativeDocumentMoniker": "Project1\\Board.hpp",
-              "ToolTip": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Board.hpp",
-              "RelativeToolTip": "Project1\\Board.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-21T14:18:35.557Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Board.cpp",
-              "DocumentMoniker": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Board.cpp",
-              "RelativeDocumentMoniker": "Project1\\Board.cpp",
-              "ToolTip": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Board.cpp",
-              "RelativeToolTip": "Project1\\Board.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHYAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-21T14:18:53.579Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Cell.hpp",
-              "DocumentMoniker": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Cell.hpp",
-              "RelativeDocumentMoniker": "Project1\\Cell.hpp",
-              "ToolTip": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Cell.hpp",
-              "RelativeToolTip": "Project1\\Cell.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-21T14:17:48.515Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PlayerManager.hpp",
-              "DocumentMoniker": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\PlayerManager.hpp",
-              "RelativeDocumentMoniker": "Project1\\PlayerManager.hpp",
-              "ToolTip": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\PlayerManager.hpp",
-              "RelativeToolTip": "Project1\\PlayerManager.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-21T14:35:19.844Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Cell.cpp",
-              "DocumentMoniker": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Cell.cpp",
-              "RelativeDocumentMoniker": "Project1\\Cell.cpp",
-              "ToolTip": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Cell.cpp",
-              "RelativeToolTip": "Project1\\Cell.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-21T14:18:11.775Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "Player.hpp",
               "DocumentMoniker": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Player.hpp",
               "RelativeDocumentMoniker": "Project1\\Player.hpp",
               "ToolTip": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Player.hpp",
               "RelativeToolTip": "Project1\\Player.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-21T14:34:14.516Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Utils.hpp",
-              "DocumentMoniker": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Utils.hpp",
-              "RelativeDocumentMoniker": "Project1\\Utils.hpp",
-              "ToolTip": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Utils.hpp",
-              "RelativeToolTip": "Project1\\Utils.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-21T14:12:56.938Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GameManager.hpp",
-              "DocumentMoniker": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\GameManager.hpp",
-              "RelativeDocumentMoniker": "Project1\\GameManager.hpp",
-              "ToolTip": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\GameManager.hpp",
-              "RelativeToolTip": "Project1\\GameManager.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-21T14:11:57.84Z",
+              "WhenOpened": "2025-04-21T14:34:14.516Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\main.cpp",
-              "RelativeDocumentMoniker": "Project1\\main.cpp",
-              "ToolTip": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\main.cpp",
-              "RelativeToolTip": "Project1\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-21T14:11:35.175Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
               "Title": "PlayerManager.cpp",
               "DocumentMoniker": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\PlayerManager.cpp",
               "RelativeDocumentMoniker": "Project1\\PlayerManager.cpp",
               "ToolTip": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\PlayerManager.cpp",
               "RelativeToolTip": "Project1\\PlayerManager.cpp",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAwDoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-21T14:35:37.968Z"
+              "WhenOpened": "2025-04-21T14:35:37.968Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 9,
               "Title": "Player.cpp",
               "DocumentMoniker": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Player.cpp",
               "RelativeDocumentMoniker": "Project1\\Player.cpp",
@@ -248,6 +135,115 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-21T14:34:32.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Utils.hpp",
+              "DocumentMoniker": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Utils.hpp",
+              "RelativeDocumentMoniker": "Project1\\Utils.hpp",
+              "ToolTip": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Utils.hpp",
+              "RelativeToolTip": "Project1\\Utils.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-21T14:12:56.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Board.cpp",
+              "DocumentMoniker": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Board.cpp",
+              "RelativeDocumentMoniker": "Project1\\Board.cpp",
+              "ToolTip": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Board.cpp",
+              "RelativeToolTip": "Project1\\Board.cpp",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAiwG8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-21T14:18:53.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PlayerManager.hpp",
+              "DocumentMoniker": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\PlayerManager.hpp",
+              "RelativeDocumentMoniker": "Project1\\PlayerManager.hpp",
+              "ToolTip": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\PlayerManager.hpp",
+              "RelativeToolTip": "Project1\\PlayerManager.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-21T14:35:19.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Cell.hpp",
+              "DocumentMoniker": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Cell.hpp",
+              "RelativeDocumentMoniker": "Project1\\Cell.hpp",
+              "ToolTip": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Cell.hpp",
+              "RelativeToolTip": "Project1\\Cell.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-21T14:17:48.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GameManager.hpp",
+              "DocumentMoniker": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\GameManager.hpp",
+              "RelativeDocumentMoniker": "Project1\\GameManager.hpp",
+              "ToolTip": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\GameManager.hpp",
+              "RelativeToolTip": "Project1\\GameManager.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-21T14:11:57.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Board.hpp",
+              "DocumentMoniker": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Board.hpp",
+              "RelativeDocumentMoniker": "Project1\\Board.hpp",
+              "ToolTip": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Board.hpp",
+              "RelativeToolTip": "Project1\\Board.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-21T14:18:35.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cell.cpp",
+              "DocumentMoniker": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Cell.cpp",
+              "RelativeDocumentMoniker": "Project1\\Cell.cpp",
+              "ToolTip": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Cell.cpp",
+              "RelativeToolTip": "Project1\\Cell.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-21T14:18:11.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Toolbox.cpp",
+              "DocumentMoniker": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Toolbox.cpp",
+              "RelativeDocumentMoniker": "Project1\\Toolbox.cpp",
+              "ToolTip": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\Toolbox.cpp",
+              "RelativeToolTip": "Project1\\Toolbox.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-08T17:13:11.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\main.cpp",
+              "RelativeDocumentMoniker": "Project1\\main.cpp",
+              "ToolTip": "C:\\Users\\A0989\\OneDrive\\\u684C\u9762\\\u7269\u4EF6\u5C0E\u5411\\Project1\\Project1\\main.cpp",
+              "RelativeToolTip": "Project1\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-21T14:11:35.175Z"
             },
             {
               "$type": "Document",
