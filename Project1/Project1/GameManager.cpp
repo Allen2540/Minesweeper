@@ -2,6 +2,7 @@
 #include "Utils.hpp"
 #include "Board.hpp"
 #include "PlayerManager.hpp"
+#include "Toolbox.hpp"
 #include <iostream>
 #include <limits>
 #include <sstream>
@@ -110,9 +111,11 @@ void GameManager::startGame(int level) {
     PlayerManager playerManager;
     playerManager.loadLeaderboard();
 
+    Toolbox t(board,level, level, level+2, level);
     while (true) {
         board.display();
-        std::cout << "指令 (r/f) 行 列 或輸入 return 返回主選單：";
+        std::cout << "錯誤偵測儀(l): " << t.getMineTries() << std::endl<<"雷源定位器(c): "<<t.getCheckTries()<<std::endl<<"安全指引器(s): "<<t.getSafeTries()<<std::endl<<"地雷感測器(p): "<<t.getProbeTries()<<std::endl;
+        std::cout << "指令 r=揭示(行 列)，f=插旗(行 列)，p=地雷感測器(行 列)，l=錯誤偵測儀，c=雷源定位器，s=安全指引器，或輸入return 返回主選單：";
         std::getline(std::cin, input);
         if (input == "return") {
             std::cout << "已返回主選單，成績不記錄。\n";
@@ -123,7 +126,6 @@ void GameManager::startGame(int level) {
         char cmd;
         int r, c;
         ss >> cmd >> r >> c;
-
         if (cmd == 'r') {
             if (board.reveal(r, c)) {
                 errors++;
@@ -137,6 +139,18 @@ void GameManager::startGame(int level) {
         }
         else if (cmd == 'f') {
             board.toggleFlag(r, c);
+        }
+        else if (cmd == 'l') {
+            t.locateMine();
+        }
+        else if (cmd == 'c') {
+            t.checkFlagErrors();
+        }
+        else if (cmd == 's') {
+            t.revealSafeCell();
+        }
+        else if (cmd == 'p') {
+            t.probeCell(r, c);
         }
 
         if (board.isCleared()) {

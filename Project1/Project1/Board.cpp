@@ -107,3 +107,14 @@ bool Board::isCleared() const {
                 return false;
     return true;
 }
+
+int Board::getRow()const {
+    return rows;
+}
+int Board::getCol()const {
+    return cols;
+}
+Cell Board::getCell(int r, int c) const {
+    if (inBounds(r, c)) return grid[r][c];
+    return Cell();
+}
