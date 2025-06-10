@@ -7,6 +7,16 @@
 #include <limits>
 #include <sstream>
 #include <chrono>
+#include <thread>
+
+void GameManager::showAdAndWait() {
+    std::cout << "\n【廣告播放中】請稍候 10 秒復活...\n";
+    for (int i = 10; i >= 1; --i) {
+        std::cout << "\r剩下 " << i << " 秒..." << std::flush;
+        std::this_thread::sleep_for(std::chrono::seconds(1));
+    }
+    std::cout << "\n廣告結束，你已復活！\n";
+}
 
 void GameManager::run() {
     std::cout << "請輸入帳號名稱：";
@@ -77,8 +87,8 @@ void GameManager::howToPlay() {
     std::cout << "  f 行 列 → 插旗或取消旗子\n";
     std::cout << "  p 行 列 → 地雷感測器 點擊後可選一格，顯示是否為地雷\n";
     std::cout << "  l  →雷源定位器 定位其中一顆地雷\n";
-    std::cout << "  c  錯誤偵測儀 通知你當前插的旗子中是否有錯誤\n";
-    std::cout << "  s  安全指引器 隨機揭示一格安全格\n";
+    std::cout << "  c  →錯誤偵測儀 通知你當前插的旗子中是否有錯誤\n";
+    std::cout << "  s  →安全指引器 隨機揭示一格安全格\n";
     std::cout << "輸入 return 可隨時回首頁，退出不記分。\n\n";
 }
 
@@ -99,6 +109,15 @@ void GameManager::showDifficultyInfo() {
     std::cout << "難度 7：16x16，40 顆地雷，得分 120，360秒\n\n";
 }
 
+
+bool GameManager::askRevive() {
+    std::string input;
+    std::cout << "\n你想觀看廣告並復活嗎？(y/n)：";
+    std::getline(std::cin, input);
+    return input == "y" || input == "Y";
+}
+
+
 void GameManager::startGame(int level) {
     int sizes[] = { 5, 6, 8, 10, 12, 14, 16 };
     int mines[] = { 3, 6, 10, 15, 20, 30, 40 };
@@ -118,8 +137,10 @@ void GameManager::startGame(int level) {
     playerManager.loadLeaderboard();
 
     auto startTime = std::chrono::steady_clock::now(); //倒數功能
-
+    bool revivedByTime = false; // 放在迴圈外宣告一次
     Toolbox t(board,level, level, level, level + 2);
+
+    
     while (true) {
         auto now = std::chrono::steady_clock::now();
         int elapsed = std::chrono::duration_cast<std::chrono::seconds>(now - startTime).count();
@@ -128,13 +149,33 @@ void GameManager::startGame(int level) {
         std::cout << "================================================\n";
         std::cout << "剩餘時間：" << remaining << " 秒\n";
 
+        
+
+        // 在迴圈內的時間檢查區域改成這樣：
         if (remaining <= 0) {
-            std::cout << "⏰ 時間到！遊戲結束。\n";
-            board.display(true);
-            return;
-        }  //倒數功能
+            if (!revivedByTime) {
+                if (askRevive()) {
+                    revivedByTime = true;
+                    showAdAndWait();
+                    startTime = std::chrono::steady_clock::now(); // 重設時間
+                    continue;
+                }
+                else {
+                    std::cout << "你選擇不復活，遊戲結束。\n";
+                    board.display(true);
+                    return;
+                }
+            }
+            else {
+                std::cout << "⏰ 時間到且已復活過！遊戲結束。\n";
+                board.display(true);
+                return;
+            }
+        }
+
+        
         board.display();
-        std::cout << "雷源定位器(l): " << t.getMineTries() << std::endl<<"錯誤偵測儀(c): "<<t.getCheckTries()<<std::endl<<"安全指引器(s): "<<t.getSafeTries()<<std::endl<<"地雷感測器(p): "<<t.getProbeTries()<<std::endl;
+        std::cout << "雷源定位器(l): " << t.getMineTries() <<"\n錯誤偵測儀(c): "<<t.getCheckTries()<<"\n安全指引器(s): "<<t.getSafeTries()<<"\n地雷感測器(p): "<<t.getProbeTries()<<std::endl;
         std::cout << "指令 r=揭示(行 列)，f=插旗(行 列)，p=地雷感測器(行 列)，l=錯誤偵測儀，c=雷源定位器，s=安全指引器，或輸入return 返回主選單：";
         std::getline(std::cin, input);
         if (input == "return") {
@@ -146,16 +187,30 @@ void GameManager::startGame(int level) {
         char cmd;
         int r, c;
         ss >> cmd >> r >> c;
+
         if (cmd == 'r') {
             if (board.reveal(r, c)) {
                 errors++;
-                std::cout << "💥 你踩到地雷了！";
-                if (errors >= 1) {
+                std::cout << "💥 你踩到地雷了！\n";
+
+                if (errors == 1) {
+                    if (askRevive()) {
+                        showAdAndWait();
+                        continue;
+                    }
+                    else {
+                        board.display(true);
+                        std::cout << "你選擇不復活，遊戲結束。\n";
+                        return;
+                    }
+                }
+                else {
                     board.display(true);
-                    std::cout << "遊戲失敗，已超過 1次錯誤。\n";
+                    std::cout << "遊戲失敗，已超過 1 次錯誤。\n";
                     return;
                 }
             }
+
         }
         else if (cmd == 'f') {
             board.toggleFlag(r, c);
@@ -187,3 +242,4 @@ void GameManager::startGame(int level) {
         }
     }
 }
+

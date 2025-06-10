@@ -12,4 +12,6 @@ private:
     void showLeaderboard();
     void showDifficultyInfo();
     void startGame(int level);
+    void showAdAndWait();
+    bool askRevive();
 };
