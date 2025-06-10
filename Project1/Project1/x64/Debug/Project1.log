@@ -1,7 +1,10 @@
 ﻿  GameManager.cpp
-  Toolbox.cpp
-C:\Users\A0989\OneDrive\桌面\物件導向\Project1\Project1\Toolbox.cpp(98,13): warning C4566: 由通用字元名稱 '\u2705' 表示的字元，無法在目前的字碼頁中表示 (950)
-C:\Users\A0989\OneDrive\桌面\物件導向\Project1\Project1\Toolbox.cpp(113,16): warning C4566: 由通用字元名稱 '\U0001F4A3' 表示的字元，無法在目前的字碼頁中表示 (950)
-C:\Users\A0989\OneDrive\桌面\物件導向\Project1\Project1\Toolbox.cpp(116,17): warning C4566: 由通用字元名稱 '\u2705' 表示的字元，無法在目前的字碼頁中表示 (950)
-  正在產生程式碼...
+C:\Users\A0989\OneDrive\桌面\物件導向\Project1\Project1\GameManager.cpp(125,21): warning C4244: '正在初始化': 將 '_Rep' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\A0989\OneDrive\桌面\物件導向\Project1\Project1\GameManager.cpp(125,21): warning C4244:         with
+C:\Users\A0989\OneDrive\桌面\物件導向\Project1\Project1\GameManager.cpp(125,21): warning C4244:         [
+C:\Users\A0989\OneDrive\桌面\物件導向\Project1\Project1\GameManager.cpp(125,21): warning C4244:             _Rep=__int64
+C:\Users\A0989\OneDrive\桌面\物件導向\Project1\Project1\GameManager.cpp(125,21): warning C4244:         ]
+C:\Users\A0989\OneDrive\桌面\物件導向\Project1\Project1\GameManager.cpp(132,26): warning C4566: 由通用字元名稱 '\u23F0' 表示的字元，無法在目前的字碼頁中表示 (950)
+C:\Users\A0989\OneDrive\桌面\物件導向\Project1\Project1\GameManager.cpp(152,30): warning C4566: 由通用字元名稱 '\U0001F4A5' 表示的字元，無法在目前的字碼頁中表示 (950)
+C:\Users\A0989\OneDrive\桌面\物件導向\Project1\Project1\GameManager.cpp(183,26): warning C4566: 由通用字元名稱 '\U0001F389' 表示的字元，無法在目前的字碼頁中表示 (950)
   Project1.vcxproj -> C:\Users\A0989\OneDrive\桌面\物件導向\Project1\x64\Debug\Project1.exe

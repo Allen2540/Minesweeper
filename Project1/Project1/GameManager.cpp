@@ -1,4 +1,4 @@
-#include "GameManager.hpp"
+ï»¿#include "GameManager.hpp"
 #include "Utils.hpp"
 #include "Board.hpp"
 #include "PlayerManager.hpp"
@@ -6,9 +6,10 @@
 #include <iostream>
 #include <limits>
 #include <sstream>
+#include <chrono>
 
 void GameManager::run() {
-    std::cout << "½Ð¿é¤J±b¸¹¦WºÙ¡G";
+    std::cout << "è«‹è¼¸å…¥å¸³è™Ÿåç¨±ï¼š";
     std::getline(std::cin, currentUser);
     Utils::clearScreen();
     showMainMenu();
@@ -16,13 +17,13 @@ void GameManager::run() {
 
 void GameManager::showMainMenu() {
     while (true) {
-        std::cout << "\n====== ¥D¿ï³æ ======\n";
-        std::cout << "1. ¹CÀ¸ª±ªk»¡©ú\n";
-        std::cout << "2. ¬d¬Ý±Æ¦æº]\n";
-        std::cout << "3. Ãø«×¤¶²Ð\n";
-        std::cout << "4~10. ¶}©l¹CÀ¸¡]Ãø«× 1~7¡^\n";
-        std::cout << "¿é¤J return ¥i¦^­º­¶¡]³~¤¤°h¥X¤£°O¤À¡^\n";
-        std::cout << "½Ð¿é¤J¿ï¶µ¡]1-10 ©Î return¡^¡G";
+        std::cout << "\n====== ä¸»é¸å–® ======\n";
+        std::cout << "1. éŠæˆ²çŽ©æ³•å’Œé“å…·èªªæ˜Ž\n";
+        std::cout << "2. æŸ¥çœ‹æŽ’è¡Œæ¦œ\n";
+        std::cout << "3. é›£åº¦ä»‹ç´¹\n";
+        std::cout << "4~10. é–‹å§‹éŠæˆ²ï¼ˆé›£åº¦ 1~7ï¼‰\n";
+        std::cout << "è¼¸å…¥ return å¯å›žé¦–é ï¼ˆé€”ä¸­é€€å‡ºä¸è¨˜åˆ†ï¼‰\n";
+        std::cout << "è«‹è¼¸å…¥é¸é …ï¼ˆ1-10 æˆ– returnï¼‰ï¼š";
 
         std::string choice;
         std::getline(std::cin, choice);
@@ -52,15 +53,15 @@ void GameManager::handleMenuChoice(const std::string& choice) {
         try {
             int num = std::stoi(choice);
             if (num >= 4 && num <= 10) {
-                int level = num - 3;  // ¹ïÀ³Ãø«×1~7
+                int level = num - 3;  // å°æ‡‰é›£åº¦1~7
                 startGame(level);
             }
             else {
-                std::cout << "?? µL®Ä¿ï¶µ¡A½Ð¿é¤J 1 ~ 10¡C\n";
+                std::cout << "?? ç„¡æ•ˆé¸é …ï¼Œè«‹è¼¸å…¥ 1 ~ 10ã€‚\n";
             }
         }
         catch (...) {
-            std::cout << "?? ½Ð¿é¤J¦³®Äªº¿ï¶µ½s¸¹¡]1 ~ 10¡^¡C\n";
+            std::cout << "?? è«‹è¼¸å…¥æœ‰æ•ˆçš„é¸é …ç·¨è™Ÿï¼ˆ1 ~ 10ï¼‰ã€‚\n";
         }
     }
 }
@@ -69,12 +70,16 @@ void GameManager::handleMenuChoice(const std::string& choice) {
 
 
 void GameManager::howToPlay() {
-    std::cout << "\n??¡i½ò¦a¹pª±ªk»¡©ú¡j??\n";
-    std::cout << "¥Ø¼Ð¡G±N©Ò¦³¤£¬O¦a¹pªº®æ¤l¥þ³¡¥´¶}¡I\n";
-    std::cout << "«ü¥O®æ¦¡¡G\n";
-    std::cout << "  r ¦æ ¦C ¡÷ ¥´¶}¸Ó®æ\n";
-    std::cout << "  f ¦æ ¦C ¡÷ ´¡ºX©Î¨ú®øºX¤l\n";
-    std::cout << "¿é¤J return ¥iÀH®É¦^­º­¶¡A°h¥X¤£°O¤À¡C\n\n";
+    std::cout << "\n??ã€è¸©åœ°é›·çŽ©æ³•èªªæ˜Žã€‘??\n";
+    std::cout << "ç›®æ¨™ï¼šå°‡æ‰€æœ‰ä¸æ˜¯åœ°é›·çš„æ ¼å­å…¨éƒ¨æ‰“é–‹ï¼\n";
+    std::cout << "æŒ‡ä»¤æ ¼å¼ï¼š\n";
+    std::cout << "  r è¡Œ åˆ— â†’ æ‰“é–‹è©²æ ¼\n";
+    std::cout << "  f è¡Œ åˆ— â†’ æ’æ——æˆ–å–æ¶ˆæ——å­\n";
+    std::cout << "  p è¡Œ åˆ— â†’ åœ°é›·æ„Ÿæ¸¬å™¨ é»žæ“Šå¾Œå¯é¸ä¸€æ ¼ï¼Œé¡¯ç¤ºæ˜¯å¦ç‚ºåœ°é›·\n";
+    std::cout << "  l  â†’é›·æºå®šä½å™¨ å®šä½å…¶ä¸­ä¸€é¡†åœ°é›·\n";
+    std::cout << "  c  éŒ¯èª¤åµæ¸¬å„€ é€šçŸ¥ä½ ç•¶å‰æ’çš„æ——å­ä¸­æ˜¯å¦æœ‰éŒ¯èª¤\n";
+    std::cout << "  s  å®‰å…¨æŒ‡å¼•å™¨ éš¨æ©Ÿæ­ç¤ºä¸€æ ¼å®‰å…¨æ ¼\n";
+    std::cout << "è¼¸å…¥ return å¯éš¨æ™‚å›žé¦–é ï¼Œé€€å‡ºä¸è¨˜åˆ†ã€‚\n\n";
 }
 
 void GameManager::showLeaderboard() {
@@ -84,21 +89,22 @@ void GameManager::showLeaderboard() {
 }
 
 void GameManager::showDifficultyInfo() {
-    std::cout << "\n??¡iÃø«×¤¶²Ð¡j\n";
-    std::cout << "Ãø«× 1¡G5x5¡A3 Áû¦a¹p¡A±o¤À 10\n";
-    std::cout << "Ãø«× 2¡G6x6¡A6 Áû¦a¹p¡A±o¤À 20\n";
-    std::cout << "Ãø«× 3¡G8x8¡A10 Áû¦a¹p¡A±o¤À 30\n";
-    std::cout << "Ãø«× 4¡G10x10¡A15 Áû¦a¹p¡A±o¤À 50\n";
-    std::cout << "Ãø«× 5¡G12x12¡A20 Áû¦a¹p¡A±o¤À 70\n";
-    std::cout << "Ãø«× 6¡G14x14¡A30 Áû¦a¹p¡A±o¤À 90\n";
-    std::cout << "Ãø«× 7¡G16x16¡A40 Áû¦a¹p¡A±o¤À 120\n\n";
+    std::cout << "\n??ã€é›£åº¦ä»‹ç´¹ã€‘\n";
+    std::cout << "é›£åº¦ 1ï¼š5x5ï¼Œ3 é¡†åœ°é›·ï¼Œå¾—åˆ† 10ï¼Œ20ç§’\n";
+    std::cout << "é›£åº¦ 2ï¼š6x6ï¼Œ6 é¡†åœ°é›·ï¼Œå¾—åˆ† 20ï¼Œ200ç§’\n";
+    std::cout << "é›£åº¦ 3ï¼š8x8ï¼Œ10 é¡†åœ°é›·ï¼Œå¾—åˆ† 30ï¼Œ220ç§’\n";
+    std::cout << "é›£åº¦ 4ï¼š10x10ï¼Œ15 é¡†åœ°é›·ï¼Œå¾—åˆ† 50ï¼Œ240ç§’\n";
+    std::cout << "é›£åº¦ 5ï¼š12x12ï¼Œ20 é¡†åœ°é›·ï¼Œå¾—åˆ† 70ï¼Œ270ç§’\n";
+    std::cout << "é›£åº¦ 6ï¼š14x14ï¼Œ30 é¡†åœ°é›·ï¼Œå¾—åˆ† 90ï¼Œ300ç§’\n";
+    std::cout << "é›£åº¦ 7ï¼š16x16ï¼Œ40 é¡†åœ°é›·ï¼Œå¾—åˆ† 120ï¼Œ360ç§’\n\n";
 }
 
 void GameManager::startGame(int level) {
-    // ¬Ù²¤ªì©l¤Æ Board ©M¹CÀ¸ÅÞ¿è³¡¤À¡A·Ó¤§«eªº¤è¦¡
     int sizes[] = { 5, 6, 8, 10, 12, 14, 16 };
     int mines[] = { 3, 6, 10, 15, 20, 30, 40 };
     int score[] = { 10, 20, 30, 50, 70, 90, 120 };
+    int timeLimits[] = { 20, 200, 220, 240, 270, 300, 360 }; // æ¯å€‹é›£åº¦çš„ç§’æ•¸é™åˆ¶ï¼Œå€’æ•¸åŠŸèƒ½
+    int timeLimit = timeLimits[level - 1];
 
     int rows = sizes[level - 1];
     int cols = sizes[level - 1];
@@ -111,14 +117,28 @@ void GameManager::startGame(int level) {
     PlayerManager playerManager;
     playerManager.loadLeaderboard();
 
+    auto startTime = std::chrono::steady_clock::now(); //å€’æ•¸åŠŸèƒ½
+
     Toolbox t(board,level, level, level, level + 2);
     while (true) {
+        auto now = std::chrono::steady_clock::now();
+        int elapsed = std::chrono::duration_cast<std::chrono::seconds>(now - startTime).count();
+        int remaining = timeLimit - elapsed;
+
+        std::cout << "================================================\n";
+        std::cout << "å‰©é¤˜æ™‚é–“ï¼š" << remaining << " ç§’\n";
+
+        if (remaining <= 0) {
+            std::cout << "â° æ™‚é–“åˆ°ï¼éŠæˆ²çµæŸã€‚\n";
+            board.display(true);
+            return;
+        }  //å€’æ•¸åŠŸèƒ½
         board.display();
-        std::cout << "¹p·½©w¦ì¾¹(l): " << t.getMineTries() << std::endl<<"¿ù»~°»´ú»ö(c): "<<t.getCheckTries()<<std::endl<<"¦w¥þ«ü¤Þ¾¹(s): "<<t.getSafeTries()<<std::endl<<"¦a¹p·P´ú¾¹(p): "<<t.getProbeTries()<<std::endl;
-        std::cout << "«ü¥O r=´¦¥Ü(¦æ ¦C)¡Af=´¡ºX(¦æ ¦C)¡Ap=¦a¹p·P´ú¾¹(¦æ ¦C)¡Al=¿ù»~°»´ú»ö¡Ac=¹p·½©w¦ì¾¹¡As=¦w¥þ«ü¤Þ¾¹¡A©Î¿é¤Jreturn ªð¦^¥D¿ï³æ¡G";
+        std::cout << "é›·æºå®šä½å™¨(l): " << t.getMineTries() << std::endl<<"éŒ¯èª¤åµæ¸¬å„€(c): "<<t.getCheckTries()<<std::endl<<"å®‰å…¨æŒ‡å¼•å™¨(s): "<<t.getSafeTries()<<std::endl<<"åœ°é›·æ„Ÿæ¸¬å™¨(p): "<<t.getProbeTries()<<std::endl;
+        std::cout << "æŒ‡ä»¤ r=æ­ç¤º(è¡Œ åˆ—)ï¼Œf=æ’æ——(è¡Œ åˆ—)ï¼Œp=åœ°é›·æ„Ÿæ¸¬å™¨(è¡Œ åˆ—)ï¼Œl=éŒ¯èª¤åµæ¸¬å„€ï¼Œc=é›·æºå®šä½å™¨ï¼Œs=å®‰å…¨æŒ‡å¼•å™¨ï¼Œæˆ–è¼¸å…¥return è¿”å›žä¸»é¸å–®ï¼š";
         std::getline(std::cin, input);
         if (input == "return") {
-            std::cout << "¤wªð¦^¥D¿ï³æ¡A¦¨ÁZ¤£°O¿ý¡C\n";
+            std::cout << "å·²è¿”å›žä¸»é¸å–®ï¼Œæˆç¸¾ä¸è¨˜éŒ„ã€‚\n";
             return;
         }
 
@@ -129,10 +149,10 @@ void GameManager::startGame(int level) {
         if (cmd == 'r') {
             if (board.reveal(r, c)) {
                 errors++;
-                std::cout << "?? §A½ò¨ì¦a¹p¤F¡I¡]¿ù»~¦¸¼Æ " << errors << "/3¡^\n";
-                if (errors >= 3) {
+                std::cout << "ðŸ’¥ ä½ è¸©åˆ°åœ°é›·äº†ï¼";
+                if (errors >= 1) {
                     board.display(true);
-                    std::cout << "¹CÀ¸¥¢±Ñ¡A¤w¶W¹L 3 ¦¸¿ù»~¡C\n";
+                    std::cout << "éŠæˆ²å¤±æ•—ï¼Œå·²è¶…éŽ 1æ¬¡éŒ¯èª¤ã€‚\n";
                     return;
                 }
             }
@@ -141,20 +161,26 @@ void GameManager::startGame(int level) {
             board.toggleFlag(r, c);
         }
         else if (cmd == 'l') {
+            std::cout << "================================================\n";
             t.locateMine();
         }
         else if (cmd == 'c') {
+            std::cout << "================================================\n";
             t.checkFlagErrors();
         }
         else if (cmd == 's') {
+            std::cout << "================================================\n";
             t.revealSafeCell();
         }
         else if (cmd == 'p') {
+            std::cout << "================================================\n";
             t.probeCell(r, c);
         }
 
         if (board.isCleared()) {
-            std::cout << "?? ®¥³ß§A§¹¦¨¹CÀ¸¡I±o¤À¡G" << score[level - 1] << " ¤À\n";
+            Utils::clearScreen();
+            board.display(true);
+            std::cout << "ðŸŽ‰ æ­å–œä½ å®ŒæˆéŠæˆ²ï¼å¾—åˆ†ï¼š" << score[level - 1] << " åˆ†\n";
             playerManager.updatePlayerScore(currentUser, score[level - 1]);
             playerManager.saveLeaderboard();
             return;

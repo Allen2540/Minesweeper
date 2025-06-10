@@ -36,7 +36,7 @@ void Toolbox::checkFlagErrors() {
         std::cout << " 錯誤旗子檢查道具已用完。\n";
         return;
     }
-    checkTries--;
+    
     int rows = boardRef.getRow();
     int cols = boardRef.getCol();
 
@@ -58,9 +58,11 @@ void Toolbox::checkFlagErrors() {
         cout << "你目前尚未插任何旗子。\n";
     }
     else if (wrongFlags == 0) {
+        checkTries--;
         cout << "太棒了！你目前所有的旗子都插對了。\n";
     }
     else {
+        checkTries--;
         cout << "警告：你目前有 " << wrongFlags << " 個旗子插錯了！\n";
     }
 }
